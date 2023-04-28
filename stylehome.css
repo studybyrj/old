@@ -1,0 +1,35 @@
+body { font-family: sans-serif;
+   
+ }
+
+#main-menu .nav-bar { list-style:none; margin-top: -8px; 
+    background-color:#3b6299;
+    padding: 20px;
+    text-align: right;
+}
+#main-menu .nav-bar li { display:inline; padding:0 5px;
+    
+ }
+
+#main-menu .nav-bar li a {
+  text-decoration: none;
+  font-weight: bold;
+  padding-left: 25px;
+  text-transform: uppercase;
+  color: #f7f2f2;
+    
+}
+.avatar{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: 10px;
+	left: calc(15% - 50px);
+}
+
+.nav-bar .nav-button-home a { background:url("https://www.cheesetoast.co.uk/cheesepress/wp-content/uploads/2012/08/home.gif") no-repeat 0px -2px transparent; }
+
+.nav-bar .nav-button-services a { background:url("https://www.cheesetoast.co.uk/cheesepress/wp-content/uploads/2012/08/services.gif") no-repeat 0px -2px transparent; }
+
+.nav-bar .nav-button-products a { background:url("https://www.cheesetoast.co.uk/cheesepress/wp-content/uploads/2012/08/products.gif") no-repeat 0px -2px transparent; }

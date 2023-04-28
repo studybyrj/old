@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Study Helper</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" type="text/css" href="styleclass.css">
+    <link rel="stylesheet" type="text/css" href="stylehome.css">
+    <link rel="stylesheet" type="text/css" href="bg.css">
+
+           <nav id="main-menu">
+    <ul class="nav-bar">
+        <link rel="stylesheet" type="text/css" href="navbar.css">
+            <img src ="logo.jpg" class="avatar">
+        <div class="loginbox"></div>
+         <li class="nav-button-home"><a href="welcome.html">Home</a></li>
+         <li class="nav-button-services"><a href="cre.html">Credit</a></li>
+         <li class="nav-button-products"><a href="cont.html">Contact</a></li>
+         <li class="nav-button-about"><a href="about.html">About</a></li>
+    </ul>
+</nav>
+
+  </head>
+  <body>
+    
+  </body>
+  
+  <!-- HTML code for the pop-up box -->
+<div id="popup-box" style="display: none;">
+    <div id="popup-content">
+        <div id="box">
+      <p>feel boring to study? play some game</p>
+      <button id="yes-btn">Yes</button>
+      <button id="no-btn">No</button>
+    </div>
+  </div>
+</div>
+  <!-- JavaScript code to show/hide the pop-up box -->
+  <script>
+ function showPopup() {
+  var popup = document.getElementById("popup-box");
+  popup.style.display = "block";
+
+  var yesBtn = document.getElementById("yes-btn");
+  var noBtn = document.getElementById("no-btn");
+
+  yesBtn.onclick = function() {
+    alert("Let's play game but we need to come agian here to study");
+    window.location.href = "poki.com";
+    popup.style.display = "none";
+  };
+
+  noBtn.onclick = function() {
+    alert("Let's study");
+    popup.style.display = "none";
+  };
+}
+
+window.onload = function() {
+  // show the pop-up box after one minute
+  setTimeout(function() {
+    showPopup();
+    // repeat every two minutes
+    setInterval(showPopup, 120000);
+  }, 60000); // 1 minute = 60000 milliseconds
+};
+  </script>
+  <style>.box {
+    background-color: #ffffff; /* white background */
+    border: 1px solid #000000; /* black border */
+    padding: 20px; /* 20-pixel padding */
+  }
+  </style>
+  
