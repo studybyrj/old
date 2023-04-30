@@ -3,10 +3,9 @@
   <head>
     <title>Study Helper</title>
     <link rel="icon" type="image/x-icon" href="logo.png">
-    <link rel="stylesheet" type="text/css" href="styleclass.css">
     <link rel="stylesheet" type="text/css" href="stylehome.css">
     <link rel="stylesheet" type="text/css" href="bg.css">
-
+    <link rel="stylesheet" type="text/css" href="bu.css">
            <nav id="main-menu">
     <ul class="nav-bar">
         <link rel="stylesheet" type="text/css" href="navbar.css">
@@ -21,53 +20,23 @@
 
   </head>
   <body>
-    <a href="class.html">Click here to start </a>
+    <b><h1>Hello! Student</h1></b>
+    <p>Here you can find so many thing <br>that you need for study this<br>website provids you so many<br>things to practice<br> <br>Enjoy! by click on button below</p>
+    <a href="class.html"><button >Let's start</button>
   </body>
-  
-  <!-- HTML code for the pop-up box -->
-<div id="popup-box" style="display: none;">
-    <div id="popup-content">
-        <div id="box">
-      <p>feel boring to study? play some game</p>
-      <button id="yes-btn">Yes</button>
-      <button id="no-btn">No</button>
-    </div>
-  </div>
-</div>
-  <!-- JavaScript code to show/hide the pop-up box -->
-  <script>
- function showPopup() {
-  var popup = document.getElementById("popup-box");
-  popup.style.display = "block";
-
-  var yesBtn = document.getElementById("yes-btn");
-  var noBtn = document.getElementById("no-btn");
-
-  yesBtn.onclick = function() {
-    alert("Let's play game but we need to come agian here to study");
-    window.location.href = "poki.com";
-    popup.style.display = "none";
-  };
-
-  noBtn.onclick = function() {
-    alert("Let's study");
-    popup.style.display = "none";
-  };
+<style>
+  h1{
+    margin:5% 3% ;
+    padding:0 0 0px;
+    font-size: 72px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+p{
+    margin:5% 3% ;
+    padding:0 0 0px;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
 }
 
-window.onload = function() {
-  // show the pop-up box after one minute
-  setTimeout(function() {
-    showPopup();
-    // repeat every two minutes
-    setInterval(showPopup, 120000);
-  }, 60000); // 1 minute = 60000 milliseconds
-};
-  </script>
-  <style>.box {
-    background-color: #ffffff; /* white background */
-    border: 1px solid #000000; /* black border */
-    padding: 20px; /* 20-pixel padding */
-  }
-  </style>
-  
+</style>
