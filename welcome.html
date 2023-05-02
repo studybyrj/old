@@ -40,3 +40,18 @@ p{
 }
 
 </style>
+    <script>
+    // Request fullscreen when the page is loaded
+    document.documentElement.requestFullscreen();
+    
+    // Add event listeners to exit fullscreen on user input
+    document.addEventListener('mousemove', exitFullscreen);
+    document.addEventListener('mousedown', exitFullscreen);
+    document.addEventListener('keydown', exitFullscreen);
+    
+    function exitFullscreen() {
+      if (document.fullscreenElement) {
+        document.exitFullscreen();
+      }
+    }
+  </script>
